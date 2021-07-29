@@ -4,11 +4,7 @@ require('discord-reply');
 const cwk = require ("cwk-api");
 const { readdirSync } = require("fs");
 const config = require ("./config.json")
-// ready 
-client.on('ready', () => {
-client.user.setActivity("chatbot by cwkhan | YouTube.com/cwkhan')
-  console.log(`Logged in as ${client.user.tag}!`);
-});
+
 // hnalder
 client.commands = new discord.Collection();
 client.aliases = new discord.Collection();
@@ -16,9 +12,12 @@ client.aliases = new discord.Collection();
 ["command", "events"].forEach(handler => {
     require(`./handler/${handler}`)(client);
 });
+
+client.on('ready', () => {
+client.user.setActivity("chatbot by cwkhan | YouTube.com/cwkhan")
+  console.log(`Logged in as ${client.user.tag}!`);
+});
 // chatbot event
-
-
 client.on("message", async message => {
   const cchann = db.get(`cwkchatbotch_${message.guild.id}`);
   if (cchann === null) return;
@@ -45,4 +44,4 @@ client.on("message", async message => {
 });
 
 // login into bot
-client.login(config.token)
+client.login(token)
