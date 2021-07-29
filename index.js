@@ -3,7 +3,7 @@ const client = new Discord.Client();
 require('discord-reply');
 const cwk = require ("cwk-api");
 const { readdirSync } = require("fs");
-const token = require ("./config.json")
+const { token , default_prefix } = require ("./config.json")
 const db = require ("quick.db");
 // handelr
 client.commands = new Discord.Collection();
