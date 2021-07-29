@@ -31,7 +31,7 @@ client.on("message", async message => {
     message.channel.stopTyping();
     message.channel.startTyping();
     fetch(
-      `https://api.affiliateplus.xyz/api/chatbot?message=${encodeURIComponent(
+      `https://api.monkedev.com/fun/chat?msg=${encodeURIComponent(
         message.content
       )}&botname=${client.user.username}&ownername=cwkhan`
     ) 
