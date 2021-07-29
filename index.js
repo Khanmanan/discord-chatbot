@@ -3,11 +3,11 @@ const client = new Discord.Client();
 require('discord-reply');
 const cwk = require ("cwk-api");
 const { readdirSync } = require("fs");
-const config = require ("./config.json")
-
-// hnalder
-client.commands = new discord.Collection();
-client.aliases = new discord.Collection();
+const token = require ("./config.json")
+const db = require ("quick.db");
+// handelr
+client.commands = new Discord.Collection();
+client.aliases = new Discord.Collection();
 
 ["command", "events"].forEach(handler => {
     require(`./handler/${handler}`)(client);
