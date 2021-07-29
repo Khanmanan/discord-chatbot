@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 require('discord-reply');
+const cwk = require ("cwk-api");
 const { readdirSync } = require("fs");
 const config = require ("./config.json")
 // ready 
