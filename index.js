@@ -18,7 +18,7 @@ client.user.setActivity("chatbot by cwkhan | YouTube.com/cwkhan")
   console.log(`Logged in as ${client.user.tag}!`);
 });
 // Chatbot event
-client.on("message", async message => {
+client.on("message", async messag => {
   const cchann = db.get(`cwkchatbotch_${message.guild.id}`);
   if (cchann === null) return;
   if (!cchann) return;
