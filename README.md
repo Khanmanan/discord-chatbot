@@ -16,7 +16,7 @@ Repl: [![Run on Repl.it](https://repl.it/badge/github/Khanmanan/discord-chatbot)
 ### Tutorial 📺
 
 
-<div align="center"> <a href="https://youtube.com/cwkhan"><img src="https://media.discordapp.net/attachments/845342268834971648/870204690527305768/1627543356132.jpg"/></a>
+<div align="center"> <a href="https://youtu.be/Tq4bZhiOMNk"><img src="https://media.discordapp.net/attachments/845342268834971648/870204690527305768/1627543356132.jpg"/></a>
 
 
 [How to host repl/glitch bot](https://youtu.be/O24Q02LpFl4)
